@@ -7,14 +7,19 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{acronym}
+
+\acrodef{HCI}{Human-Computer Interaction}
+\acrodef{MMI}{Man Machine Interaction}
+\acrodef{HMI}{Human-Machine Interface}
+\acrodef{LLM}{Large Language Model}
+\acrodef{GUI}{Graphical User Interface}
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-
-\usepackage{myacronyms}
-
-\title{Enhancing Distributed Simulations interaction through innovative Human-Computer Interaction Techniques\\
+\title{Enhancing Distributed Simulations Interaction through Innovative Human-Computer Interaction Techniques\\
 %\thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
@@ -33,28 +38,50 @@ Cesena, Italy \\
     The inherent complexity of systems contributes to the difficulty of creating intuitive interfaces that suit user needs.
     Simulations are powerful tools,
     providing a way to model real complex scenarios for observer to interact with.
-    As such,
-    simulations are no different in this regard,
+    %
     Designing an \ac{HMI} can be particularly tedious when dealing with general-purpose simulators,
     since the elements to observe and to interact with can drastically change depending on the context.
     Some additional challenges arise when dealing with distributed simulations too,
     as the observer might want to interact with multiple simulations at once.
+    %
     In this paper,
     we will explore the challenges of designing an \ac{HMI} for distributed general-purpose simulations,
     trying to address the issues caused by the inevitable complexity portrayed by the system.
+    %
     Moreover,
-    we will also discuss the potential benefits and drawbacks of using innovative \ac{HCI} techniques to enhance the user experience in this field.
+    we will also discuss the potential benefits and drawbacks of using innovative \ac{HCI} techniques to enhance the user experience in this field,
+    such as the use of \acp{LLM} to assist the user in the interaction with the simulations.
 \end{abstract}
 
 \begin{IEEEkeywords}
-    human computer interaction, simulation
+    human computer interaction, distributed simulation
 \end{IEEEkeywords}
 
 \section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
 
-\section{Ease of Use}
+\ac{HCI},
+also sometimes referred to as \ac{MMI},
+focus on the design, evaluation, and realization of \emph{interactive} computing systems for human use.
+The effectiveness of an \ac{HMI} heavenly depends on factors that consider both \emph{usability} and \emph{functionality}~\cite{Sinha2010}.
+%
+The two aspects must be balanced in order to create easy-to-use interfaces,
+whereas providing all the necessary tools for users to reach their goals.
+%
+The development of interactive interface design has rapidly progressed over the past decades,
+significantly focusing on the enhancement of \acp{GUI}~\cite{Murad2019}.
+%
+However,
+research is being conducted to explore new ways to interact with machines,
+with notable mention including,
+but not limited to,
+eye-tracking,
+hand gesture recognition,
+and \acp{LLM}~\cite{Poole2006, Sarma2021, kapania2024imcategorizingllmproductivity}.
+
+\section{\ac{HCI} techniques for in simulations}
+
+%what about the future?
+\section{Conclusions}
 
 \subsection{Maintaining the Integrity of the Specifications}
 
@@ -64,8 +91,6 @@ The preferred spelling of the word ``acknowledgment'' in America is without
 an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
 G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
 acknowledgments in the unnumbered footnote on the first page.
-
-\nocite{*}
 
 \bibliographystyle{IEEEtran}
 \bibliography{doctoral-colloquium-2024-dsrt-simulation-interaction}
