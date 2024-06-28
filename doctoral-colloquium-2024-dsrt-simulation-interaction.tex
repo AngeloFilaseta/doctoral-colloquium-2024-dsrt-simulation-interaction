@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{acronym}
 
+\acrodef{API}{Application Programming Interface}
 \acrodef{AR}{Augmented Reality}
 \acrodef{ACL}{Anti-Corruption Layer}
 \acrodef{CLI}{Command Line Interface}
@@ -172,8 +173,33 @@ The performance problem is harder to address,
 and could be mitigated by including WebAssembly in the technology stack,
 which has been proved to be more efficient and performant than JavaScript in compute-intensive cases~\cite{DBLP:conf/ict4s/Macedo0PS22}.
 %
-\section{Conclusions}
-
+\subsection{Using \ac{LLM} to assist users in interacting with Alchemist}
+As already mentioned,
+migrating to a web environment also provide more support in linking external services,
+such as \ac{LLM},
+which are usually available as a service accessible via \acp{API}.
+%
+Alchemist ensures reproducibility,
+and is mostly used as a supporting tool in research to validate models.
+%
+Consequently,
+configuring Alchemist by hand can be time-consuming,
+especially for new users that are not familiar with the domain model and the semantics.
+%
+% Other things about LLM... to write
+\section{Conclusion}
+We have explored the complexities and challenges associated with designing effective and user-friendly \acp{HMI} for distributed general-purpose simulations.
+%
+The Alchemist simulator was used as a case study to illustrate some challenges and the potential solutions.
+%
+A transition from a desktop-based \ac{GUI} to a web-based \ac{GUI} has been proposed to overcome some limitations and increase the amount of support that external tools can provide.
+%
+However,
+lots of research still needs to be conducted in order to improve the \ac{UX} of simulations.
+%
+\ac{LLM} and similar technologies are promising and pervasive tools that can be used to assist users in solving everyday problems,
+and simulations are no exception.
+%
 \section*{Acknowledgment}
 
 \bibliographystyle{IEEEtran}
