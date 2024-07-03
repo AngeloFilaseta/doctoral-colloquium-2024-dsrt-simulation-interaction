@@ -16,6 +16,7 @@
 \acrodef{HCI}{Human-Computer Interaction}
 \acrodef{MMI}{Man Machine Interaction}
 \acrodef{HMI}{Human-Machine Interface}
+\acrodef{IDE}{Integrated Development Environment}
 \acrodef{LLM}{Large Language Model}
 \acrodef{GUI}{Graphical User Interface}
 \acrodef{UI}{User Interface}
@@ -195,6 +196,26 @@ there are several use cases in which an \ac{LLM} can become really handy while i
 %
 Nowadays,
 it is common for \acp{IDE} to support
+
+\begin{figure*}
+    \includegraphics[width=2\columnwidth]{use-case}
+    \caption{
+        Comparison of the interaction between a user and copilot for code generation purposes (left),
+        and a user and an \ac{LLM} companion for simulation purposes (right).
+        %
+        In the first case the user asks for assitance in generating code to solve a problem.
+        The user does not like the generated code and asks for a new one, explaining what needs to be changed.
+        %
+        In the latter case the user wants to visualize a simulation scenario, and asks the \ac{LLM} the simulation scenario in natural language.
+        Under the hood, the \ac{LLM} translates the natural language into a configuration file that can be used by the simulator and start a simulation for the user to monitor.
+        %
+        The user can then ask for changes,
+        either because the simulation is not behaving as expected,
+        or to explore the behavuiour in different scenarios.
+    }
+    \label{fig:usecase}
+\end{figure*}
+
 % Other things about LLM... to write
 \section{Conclusion}
 We have explored the complexities and challenges associated with designing effective and user-friendly \acp{HMI} for distributed general-purpose simulations.
@@ -209,6 +230,16 @@ lots of research still needs to be conducted in order to improve the \ac{UX} of 
 \ac{LLM} and similar technologies are promising and pervasive tools that can be used to assist users in solving everyday problems,
 and simulations are no exception.
 %
+There are several possible way to effectively design an \ac{LLM} in order to improve the prompts and get better results.
+%
+One example that could suite the simulation use case is the ReAct prompting technique~\cite{DBLP:conf/iclr/YaoZYDSN023},
+which focuses on generating both reasoning traces and task-specific actions.
+%
+Moreover,
+the framework is also able to retrieve information from external environments,
+enabling to avoid fact hallucination.
+%
+
 \bibliographystyle{IEEEtran}
 \bibliography{doctoral-colloquium-2024-dsrt-simulation-interaction}
 \vspace{12pt}
