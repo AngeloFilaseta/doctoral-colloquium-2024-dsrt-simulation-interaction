@@ -146,58 +146,42 @@ such as touch screens and voice commands,
 enabling users to use interaction tools that are always accessible,
 such as their own hands and voice.
 %
+
 Almost every way of interaction related to software has followed these trends over the years,
 and simulators are no exception.
 As a case study,
-the Alchemist Simulator
-the evolution of interaction methods for the well-known simulator  in the literature demonstrates this progression.
-
-\subsection{The Alchemist Simulator as a use case}
+the evolution in the interaction methods of the Alchemist Simulator is used as an example.
+%
 The Alchemist simulator is a general-purpose and extensible simulator that allows to model and simulate complex systems~\cite{Pianini_2013}.
 %
-In order to create and describe simulation environments,
-users need to create configuration files.
+The initial way to interact with the simulator was through a \ac{CLI},
+which could be used both to configure the simulator,
+to run simulations,
+and to visualize them.
 %
-Using a \ac{CLI},
-it is then possible to run simulations by providing the configuration file as an input.
+Gradually,
+a desktop-based \ac{GUI} was introduced to provide a more intuitive way to interact with the simulator.
 %
-We are currently in the process of migrating from a desktop-based \ac{GUI} to a web-based \ac{GUI} in order to tackle some limitations and enhance the \ac{UX} for a number of motivations:
-%\begin{enumerate}
-%    \item \emph{usability} increases,
-%    since users can interact with simulations using a a web browser on any device,
-%    including smartphones and tablets;
-%    \item adding new \emph{functionalities} becomes easier,
-%    since there are many tools oriented to data visualization,
-%    such as libraries for plotting data.
-%\end{enumerate}
+The introduction of a visual representation of the simulation greatly enhanced the \ac{UX} and the speed at which users could interact with the simulator.
 %
-%The first problem can be addressed by using languages which support a variety of platforms as targets for compilation,
-%to make the usage of the same data structures in different environments possible~\cite{DBLP:conf/dais/FilasetaP23}.
+In order to tackle some limitations and enhance the \ac{UX} even more,
+we are currently in the process of migrating from a desktop-based \ac{GUI} to a web-based \ac{GUI}.
 %
-%Unfortunately, there also are some drawbacks to consider:
-%\begin{enumerate}
-%    \item in order to operate with the simulations component in a different ecosystem,
-%    a mediation layer is needed to translates the semantic of the domain model,
-%    leading  to an additional piece of code need to be implemented and maintained;
-%    \item the web environment is not as performant as a native application.
-%    Continuously rendering images in real-time can be really demanding.
-%\end{enumerate}
+This approach increases the \emph{usability},
+allowing users can interact with simulations using a a web browser on any device,
+including smartphones and tablets.
 %
+Additionally,
+the process of adding new \emph{functionalities} becomes easier,
+since there are many tools oriented to data visualization available on the ecosystem,
+such as libraries for plotting data.
 %
-%%
-%%
-%The performance problem is much harder to address,
-%and could be mitigated by including WebAssembly in the technology stack,
-%which has been proved to be more efficient and performant than the most used web language,
-%JavaScript,
-%in compute-intensive cases~\cite{DBLP:conf/ict4s/Macedo0PS22}.
-%%
 Additionally,
 the web ecosystem is suitable for facilitating effective communication between multiple distributed endpoints,
 also providing more support in linking external services,
-such as \ac{LLM},
-which are usually available as a service accessible via \acp{API}.
+which are usually available via \acp{API}.
 %
+
 \subsection{A comparison of \ac{LLM} in \acp{IDE} and Simulations}
 A software is usually an enabler for a user to reach a goal of some sort.
 %
